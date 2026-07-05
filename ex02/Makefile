@@ -1,9 +1,9 @@
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98 
-NAME = whatever
+NAME = array
 RM = rm -f
 
-SRC = main.cpp
+SRC = main.cpp Array.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
