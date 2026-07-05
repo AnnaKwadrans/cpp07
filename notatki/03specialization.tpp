@@ -11,7 +11,6 @@ class Pair
             return ;
         }
 
-        //alt + al laod de 'L'
         ~Pair<T, U>(void) {}
 
         T const &fst(void) const { return (this->_lhs); }
