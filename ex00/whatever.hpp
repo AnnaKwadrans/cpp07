@@ -1,18 +1,17 @@
 template<typename T>
-class Swap
-{
-    public:
+void    swap(T &x, T &y) {
+    T   tmp = x;
+    x = y;
+    y = tmp; 
+    return ;
+}
 
-        Swap<T>(void);
-        Swap<T>(T const &x, T const &y);
-        Swap<T>(Swap<T> const &src);
-        ~Swap();
+template<typename T>
+T const &min(T const &x, T const &y) {
+    return (x < y ? x : y);
+}
 
-    private:
-
-        T   _x;
-        T   _y;
-
-
-};
-
+template<typename T>
+T const &max(T const &x, T const &y) {
+    return (x > y ? x : y);
+}

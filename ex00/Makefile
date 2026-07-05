@@ -1,9 +1,9 @@
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98 
-NAME = base
+NAME = wahtever
 RM = rm -f
 
-SRC = main.cpp whatever.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
