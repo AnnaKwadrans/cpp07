@@ -3,7 +3,7 @@ FLAGS = -Wall -Wextra -Werror -std=c++98
 NAME = array
 RM = rm -f
 
-SRC = main.cpp Array.cpp
+SRC = main.cpp Array.tpp
 
 OBJ = $(SRC:.cpp=.o)
 
