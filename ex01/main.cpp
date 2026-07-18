@@ -1,11 +1,11 @@
 #include "iter.hpp"
 
-void    print(int n) {
+void    print(int &n) {
     std::cout << n << std::endl;
     return;
 }
 
-void    increase(int n) {
+void    increase(int &n) {
     n++;
     return ;
 }
@@ -13,11 +13,11 @@ void    increase(int n) {
 int main(void)
 {
 
-    int integers[] = {1, 2, 3, 4};
+    int integers[4] = {1, 2, 3, 4};
 
-    iter<int[]>(&integers, 4, print);
-    iter<int[]>(&integers, 4, increase);
-
+    iter<int>(integers, 4, print);
+    iter<int>(integers, 4, increase);
+    iter<int>(integers, 4, print);
 
     return (0);
 }
