@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Array.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akwadran <akwadran@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/19 10:47:25 by akwadran          #+#    #+#             */
+/*   Updated: 2026/07/19 10:58:37 by akwadran         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef ARRAY_HPP
 # define ARRAY_HPP
 
@@ -7,11 +19,11 @@
 template<typename T>
 class Array
 {
-        private:
+        public:
                 T               *_elements;
                 unsigned int    _size;
 
-        public:
+        
                 Array<T>(void);
                 Array<T>(unsigned int n);
                 Array<T>(const Array & src);

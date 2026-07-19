@@ -12,7 +12,7 @@ Array<T>::Array(unsigned int n) : _elements(new T [n]), _size(n) {}
                 //Array<T>   &operator=(const Array<T> & src);
                 // When accessing an element with the [ ] operator, if its index is out of bounds, an
                 // std::exception is thrown.
-                //T       &operator[](unsigned int index);
+                //T       &operator[](unsigned int index); 
 
                 // A member function size() that returns the number of elements in the array. This
                 // member function takes no parameters and must not modify the current instance.

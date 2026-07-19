@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Array.tpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: akwadran <akwadran@student.42madrid.com    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/19 10:47:28 by akwadran          #+#    #+#             */
+/*   Updated: 2026/07/19 11:08:01 by akwadran         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Array.hpp"
 
 template<typename T>
@@ -14,7 +26,7 @@ Array<T>::Array(const Array & src) : _elements(new T [src._size]), _size(src._si
 
 template<typename T>
 Array<T>   &Array<T>::operator=(const Array<T> & src) {
-        if (&this != src)
+        if (this != &src)
         {
                 delete [] this->_elements;
                 this->_elements = new T [src._size];
